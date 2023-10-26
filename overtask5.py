@@ -106,7 +106,7 @@ def file_to_markdown(file):
         for j, lesson in enumerate(lessons):
             markdown += f"### lesson{j + 1}\n"
             for key, attribute in lesson.items():
-                markdown += f"* {key}: {attribute}\n"
+                markdown += f"* **{key}**: *{attribute}*\n"
     return markdown
 
 
